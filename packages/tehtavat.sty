@@ -13,7 +13,6 @@
 % Käytä tätä ympäristöä tehtäville
 \newenvironment{tehtavasivu}
 {
-  \begin{adjustwidth}{-24mm}{0mm}
   \newpage
 
   \titleformat{\subsection}[hang]
@@ -25,14 +24,9 @@
 
   \subsection*{Tehtäviä}%
   %\addcontentsline{toc}{section}{Tehtäviä}
-  \setlength{\columnsep}{7mm}
-  \begin{multicols}{2}
   \raggedright
 }
 {
-  %\end{flushleft}
-  \end{multicols}
-  \end{adjustwidth}
   \newpage
 }
 
