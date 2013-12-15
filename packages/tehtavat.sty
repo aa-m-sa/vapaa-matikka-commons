@@ -30,6 +30,25 @@
   \newpage
 }
 
+\newenvironment{kotitehtavasivu}
+{
+  \newpage
+
+  \titleformat{\subsection}[hang]
+  {\sffamily\color{vapaa_matikka_vari_5}\fontsize{16}{12}\selectfont}
+  {\thesubsection}
+  {0.5em}
+  {}
+  [\vspace{0.5mm}{\titlerule[0.5pt]}]
+
+  \subsection*{Kotitehtäviä}%
+  %\addcontentsline{toc}{section}{Kotitehtäviä}
+  \raggedright
+}
+{
+  \newpage
+}
+
 \newenvironment{vastaussivu}
 {
   \fontsize{9pt}{1em}\selectfont
